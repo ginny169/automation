@@ -15,17 +15,19 @@
 
 
 ## Website to read documents, articles
-- app.daily.dev 
-- google news
-- medium
-- dev.to
-- github
+- [daily.dev](https://app.daily.dev/)
+- [google news](https://news.google.com/)
+- [medium](https://medium.com/)
+- [dev.to](https://dev.to/)
+- [github](https://github.com/)
+  - [Explore > Topics](https://github.com/topics)
+  - [Explore > Trending](https://github.com/trending)
 
 
 ## Installation 
 - Java SDK 11
 - Editor: IntelliJ IDEA, Cursor
-- Plugins: supermaven (for IntelliJ IDEA)
+- Plugins: Supermaven (for IntelliJ IDEA)
 - Maven
 
 ## Create Github repo
