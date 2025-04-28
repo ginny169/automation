@@ -4,8 +4,9 @@
 - Keys points:
   - automation is development
   - daily/weekly learning and practice
-  - Debugging is super important
   - OOP and design principles are important
+  - Debugging
+  - Log reading and understanding
 
 
 ## Roadmap
