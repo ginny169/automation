@@ -1,4 +1,4 @@
 # Automation training
 
 ## Videos 
-- [01-Introduction]()
+- [01-Introduction](https://youtu.be/ZY2jkfOYfKM)
