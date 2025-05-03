@@ -1,62 +1,21 @@
 package org.example;
-
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxDriverService;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import java.net.MalformedURLException;
-import java.net.URL;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+/* 1.Write 3 classes to run selenium with below scenario in different browsers (Chrome, Firefox, Edge) Scenario:
+- Open Browser
+- Navigate to "https://github.com"
+- Wait for 4 seconds
+- Quit Browser */
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
-        // before version 4.0.0
-        // 1. download chromedriver from https://chromedriver.chromium.org/downloads
-        // 2. set the path of chromedriver in the system property "webdriver.chrome.driver"
-//        System.setProperty("webdriver.chrome.driver", "/Users/tando/.cache/selenium/chromedriver/mac-arm64/135.0.7049.114/chromedriver");
-        // 3. create a ChromeDriver instance
-//        WebDriver driver = new ChromeDriver();
+        RunOnChrome run1 = new RunOnChrome();
+        run1.openGitOnChrome();
 
-        // create chromedriver instance with service and options
-//        ChromeDriverService service = new ChromeDriverService();
-//        service.start();
-//        service.stop();
-//        service.setExecutable("/Users/tando/.cache/selenium/chromedriver/mac-arm64/135.0.7049.114/chromedriver");
-//        // config port
-//        service.setPort(9515);
-//
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--window-size=720,1080");
-//
-//        WebDriver driver = new ChromeDriver(service, options);
+//        RunOnFirefox runFf = new RunOnFirefox();
+//        runFf.openGitOnFirefox();
 
-        // create remote web driver instance to automate chrome browser
-        String url = "http://localhost:25663";
-        FirefoxOptions options = new FirefoxOptions();
-        options.setBinary("/Users/tando/.cache/selenium/firefox/mac-arm64/138.0/Firefox.app/Contents/MacOS/firefox");
-//        Capabilities capabilities = options;
-
-        WebDriver driver = new RemoteWebDriver(new URL(url), options);
-
-        // 4. navigate to the URL and wait for the page to load
-        driver.get("https://www.google.com/");
-        Thread.sleep(5000);
-        // 5. quit the driver
-        driver.quit();
-
-//        // after version 4.0.0
-        System.out.println("Hello and welcome!");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://selenium.dev");
-        Thread.sleep(3000);
-        driver.quit();
-        System.out.println("Goodbye!");
+//        RunOnEdge runE = new RunOnEdge();
+//        runE.openGitonEdge();
     }
 }
